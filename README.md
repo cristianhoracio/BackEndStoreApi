@@ -1,6 +1,14 @@
-# 🛠️ API de Gestión Comercial
+# 🛍️ BackEndStoreApi
 
-Este proyecto es una API REST desarrollada en Java con Spring Boot como parte de la entrega del curso de backend. Permite gestionar productos, clientes y comercios, con operaciones CRUD completas y persistencia en base de datos MySQL.
+**API RESTful desarrollada con Spring Boot y MySQL para la gestión integral de productos, clientes y comercios.**  
+Este proyecto forma parte de mi portfolio técnico como desarrollador backend.
+
+---
+
+## 🎯 Propósito del proyecto
+
+Esta API simula la gestión comercial de una tienda, permitiendo administrar entidades como productos, clientes y comercios.  
+Ideal como base para sistemas de inventario, e-commerce o ERP.
 
 ---
 
@@ -12,28 +20,51 @@ Este proyecto es una API REST desarrollada en Java con Spring Boot como parte de
 
 ---
 
-## 🔧 Tecnologías utilizadas
+## 🚀 Tecnologías utilizadas
 
-- Java 17
-- Spring Boot
-- Spring Data JPA
-- MySQL
-- Maven
-- Postman (para pruebas de endpoints)
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- MySQL  
+- Maven  
+- Postman (testing)
 
 ---
 
 ## 📦 Funcionalidades
 
-- Crear, leer, actualizar y eliminar productos, clientes y comercios.
-- Relaciones entre entidades (por ejemplo, productos asociados a un comercio).
-- Validaciones básicas y manejo de errores.
-- Documentación de endpoints con Postman.
+- CRUD completo de productos, clientes y comercios  
+- Relaciones entre entidades (por ejemplo, productos asociados a comercios)  
+- Persistencia con JPA e Hibernate  
+- Validaciones básicas y manejo de errores  
+- Pruebas de endpoints con Postman  
 
 ---
 
-## 🚀 Cómo ejecutar
+## 🔗 Endpoints de ejemplo
 
-1. Cloná el repositorio:
-   ```bash
-   git clone https://github.com/cristianhoracio/entrega_backend.git
+```http
+GET /api/productos  
+POST /api/clientes  
+PUT /api/comercios/{id}  
+DELETE /api/productos/{id}
+```
+
+⚙️ Cómo ejecutar
+Cloná el repositorio:
+
+bash
+git clone https://github.com/cristianhoracio/BackEndStoreApi.git
+Configurá la conexión a MySQL en: src/main/resources/application.properties
+
+Ejecutá el proyecto:
+
+bash
+mvn spring-boot:run
+💼 Sobre mí
+Este proyecto fue desarrollado como parte de mi formación en backend con Spring Boot. Lo considero mi proyecto insignia por representar los conceptos clave que domino: persistencia con JPA, arquitectura limpia, pruebas con Postman y uso eficiente de Java.
+
+📫 Contacto
+📧 chrisfuturo308@gmail.com 🌐 GitHub - cristianhoracio
+
+"Construyendo soluciones que conectan código con propósito."
